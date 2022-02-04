@@ -12,7 +12,7 @@ div {
   nav{
       background-color: #726666;
   }
-  footer{
+  footer.footer{
     background-color: #ffffff;
   }
   p.card__title{

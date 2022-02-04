@@ -1,17 +1,21 @@
 div.card{
+    
     background-color: #fff;
     text-align: left;
     padding: 1em;
     width:288px;
     height: 302px;
     margin-bottom: 10px;
+
   }
   .f-container{
     display:flex; 
     flex-direction: row;
     flex-wrap: wrap;
+
   }
-  .f-item{
+
+  .card{
     margin-right: 10px;
     margin-left: 20px;
   }

@@ -1,0 +1,38 @@
+  div.card{
+    background-color: #fff;
+    text-align: left;
+    padding: 1em;
+    width:288px;
+    height: 302px;
+    margin-bottom: 10px;
+  }
+  
+  img{
+    width:288px;
+    height: 182px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  header.header{
+      background-color: #ffffff;
+  }
+  body{
+      background-color: #C4C4C4;
+  }
+  nav{
+      background-color: #726666;
+      width:288px;
+  }
+  footer.footer{
+    background-color: #ffffff;
+  }
+  p.card__title{
+    color: #282828;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  p.card__description{
+      color: #282828;
+      font-size: 12px;
+  }
+ 

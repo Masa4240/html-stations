@@ -48,17 +48,7 @@ div.card{
     color: #282828;
     font-size: 12px;
 }
-  @media screen and (min-width: 768px) {
-    p.card__title {
-        font-size: 5px;
-        margin-bottom: 5px;
-    }
-    p.card__description {
-        font-size: 3px;
-        margin-bottom: 3px;
-    }
-  }
-  @media screen and (min-width: 320px) {
+@media screen and (max-width: 400px) {
     p.card__title {
         font-size: 5px;
         margin-bottom: 3px;
@@ -69,3 +59,13 @@ div.card{
   }
 
  
+  @media screen and (max-width: 700) {
+    p.card__title {
+        font-size: 5px;
+        margin-bottom: 5px;
+    }
+    p.card__description {
+        font-size: 3px;
+        margin-bottom: 3px;
+    }
+  }

@@ -1,3 +1,6 @@
+const { map } = require("fp-ts/lib/Functor");
+const { id } = require("fp-ts/lib/Refinement");
+
 function getData() {
     // これから作ろうとしているもので、JavaScriptでフルネームを生成する必要が出てきました。
     // ただ現状持っている情報では、名前と苗字をそれぞれのみしかありません。
@@ -8,9 +11,11 @@ function getData() {
     ];
     return test.map(buildFullName)
 }
-
+ 
 function buildFullName(data) {
-    // Station14の問題はこちらです。想定する答えをここを書いてください。
+    data.full_name = data.family_name + " " + data.first_name;
+    return data;
+        // Station14の問題はこちらです。想定する答えをここを書いてください。
     // 氏名がわかるようにしつつ、半角スペースで繋いでください。
     // またtest配列のそれぞれのオブジェクトに対して、full_nameのプロパティが追加されるように実装すること
 }
@@ -18,5 +23,4 @@ function buildFullName(data) {
 // 出力が想定される答え
 // const test = [
 //     {id: 1, full_name: '大木 優', first_name: '優', family_name: '大木',affilication: 'TechTrain', is_student: false},
-//     {id: 2, full_name: '山田 太郎', first_name: '太郎', family_name: '山田',affilication: 'HogeHoge大学', is_student: true}
-// ];
+//     {id: 2, full_name: '山田 太郎', first_name: '太郎', family_name: '山田',affilication: '
